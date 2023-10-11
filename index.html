@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css" id="theme-source" media="all">
+    <link rel="icon" href="./assets/favicon.svg">
+    <script src="./script.js" defer></script>
+    <meta
+            name="description"           
+            content="Portfolio website.">
+    <title>Riyansh - Portfolio</title>
+</head>
+<body>
+    <div class="sidenav">
+        <button class="link" id="1">
+            <a href="#About">
+                <div class="dot"></div>
+                <small>
+                    About
+                </small>
+            </a>
+        </button>
+        <button class="link" id="3">
+            <a href="#Projects">
+                <div class="dot"></div>
+                <small>
+                    Projects
+                </small>
+            </a>
+        </button>
+        <button class="link" id="2">
+            <a href="#Skills">
+                <div class="dot"></div>
+                <small>
+                    Skills
+                </small>
+            </a>
+        </button>
+        <button class="link" id="4">
+            <a href="#Academics">
+                <div class="dot"></div>
+                <small>
+                    Academics
+                </small>
+            </a>
+        </button>
+    </div>
+    <div>
+        <ul class="side-social">
+            <li>
+                <a href="mailto:riyanshv30@gmail.com" target="_blank" rel="noopener" title="Mail me!">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                </a>  
+            </li>
+            <li>
+                <a href="https://github.com/riyansh30" target="_blank" rel="noopener" title="Github">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>  
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/riyanshv/" target="_blank" rel="noopener" title="Linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>  
+            </li>
+            
+        </ul>
+    </div>
+    <main>
+        <nav>
+            <div class="nav-1">
+                <div class="title"><a href="#front">R.</a></div>
+                <ul class="links">
+                    <li>|</li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Academics">Academics</a></li>
+                </ul>
+            </div>
+            <div class="links-menu">
+                <ul class="links-mobile" onclick="openMenu()">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Academics">Academics</a></li>
+                </ul>
+            </div>
+            <div class="theme-button">
+                <img src="./assets/day.svg" onclick="changeTheme()" id="theme">
+                <div class="hamb">
+                    <input type="checkbox" id="menu-check" onclick="openMenu()"/>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="front" id="front">
+            <div>
+                <span id="front1">Hey there!</span>
+                <h1 id="front2">I'm Riyansh.</h1>
+                <span id="front3">MERN Stack Developer. DSA enthusiast.</span>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="mailto:riyanshv30@gmail.com" target="_blank" rel="noopener" title="Mail me!">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <polyline points="3 7 12 13 21 7" />
+                            </svg>
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="https://github.com/riyansh30" target="_blank" rel="noopener" title="Github">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/riyanshv/" target="_blank" rel="noopener" title="Linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <line x1="8" y1="11" x2="8" y2="16" />
+                                <line x1="8" y1="8" x2="8" y2="8.01" />
+                                <line x1="12" y1="16" x2="12" y2="11" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg>
+                        </a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="About">
+            <div class="heading"><div class="colored">About</div> me</div>
+            <div class="content">
+                <b>Hi!</b>
+                <p>
+                     I'm a CS undergraduate who loves problem solving, creating new things, & exploring technologies. 
+                </p>
+                <p>
+                    I'm interested in the domain of Web Development. 
+                </p>
+                <div>
+                    <a href="./assets/resume.pdf"><button>Resume</button></a>
+                    <a href="#Academics"><button>Academics</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+            <div class="heading"><div class="colored">P</div>rojects</div>
+            <div class="content">
+                <div class="project-menu">
+                    <ul class="project-titles">
+                        <li class="active" id="1">JS-CSS Clock</li>
+                        <li id="2">Drum Kit</li>
+                        <li id="3">HTML canvas</li>
+                        <li id="4">Video Player</li>
+                        <li id="5">Compass</li>
+                    </ul>
+                    <div class="project-card">
+                        <div class="project-content active">
+                            <div class="project-heading">JS-CSS Clock</div>
+                            <p>An analog clock made using the basics of web development.
+                            </p>
+                            <ul class="tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/riyansh30/JS-CSS-clock" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-heading">Drum Kit</div>
+                            <p>A drum kit app created using HTML, CSS, and Javascript.
+                                Accessible through keys. 
+                            </p>
+                            <ul class="tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/riyansh30/Js-Drum-Kit" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-heading">HTML canvas</div>
+                            <p>A fun canvas made using HTML and JS.
+                            </p>
+                            <ul class="tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/riyansh30/HTMLcanvas" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>  
+                            </div> 
+                        </div>
+                        <div class="project-content">
+                            <div class="project-heading">Video Player</div>
+                            <p>A custom video player made using the HTML, CSS and JS.
+                            </p>
+                            <ul class="tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/riyansh30/Custom-video-player" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>  
+                            </div> 
+                        </div>
+                        <div class="project-content">
+                            <div class="project-heading">Compass</div>
+                            <p>A compass made using the geolocation api of javascript which helps you with getting your geolocation.
+                            </p>
+                            <ul class="tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/riyansh30/Compass" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a> 
+                                <a href="https://riyansh30.github.io/Compass/" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                        <line x1="10" y1="14" x2="20" y2="4" />
+                                        <polyline points="15 4 20 4 20 9" />
+                                    </svg>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Skills">
+            <div class="heading"><div class="colored">S</div>kills</div>
+            <div class="content">
+                <ul class="content-box">
+                    <div class="skill-button">
+                        <svg fill="#666" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48" height="48">
+                            <path fill="#666" stroke="none" stroke-miterlimit="10" stroke-width="2" d="M25,13c3.78,0,7.275,1.755,9.542,4.741l-4.38,2.536C28.844,18.837,26.973,18,25,18c-3.86,0-7,3.14-7,7s3.14,7,7,7c1.973,0,3.844-0.837,5.162-2.277l4.38,2.536C32.275,35.245,28.78,37,25,37c-6.617,0-12-5.383-12-12S18.383,13,25,13"/>
+                            <path fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="2" d="M43.421 12.875L26.579 3.412c-.977-.549-2.181-.549-3.158 0L6.579 12.875C5.602 13.424 5 14.439 5 15.537v18.927c0 1.098.602 2.113 1.579 2.662l16.842 9.463c.977.549 2.181.549 3.158 0l16.842-9.463C44.398 36.576 45 35.561 45 34.463V15.537C45 14.439 44.398 13.424 43.421 12.875"/>
+                        </svg>
+                        <p>C++</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg fill="#666" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48" height="48">
+                            <path d="M 43.910156 12.003906 L 27.070313 2.539063 C 25.792969 1.824219 24.207031 1.824219 22.929688 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.929688 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.070313 47.460938 L 43.910156 37.996094 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 Z M 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 C 28.78125 13 32.273438 14.753906 34.542969 17.742188 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.257813 C 32.273438 35.246094 28.78125 37 25 37 Z M 37 26 L 35 26 L 35 28 L 33 28 L 33 26 L 31 26 L 31 24 L 33 24 L 33 22 L 35 22 L 35 24 L 37 24 Z M 44 26 L 42 26 L 42 28 L 40 28 L 40 26 L 38 26 L 38 24 L 40 24 L 40 22 L 42 22 L 42 24 L 44 24 Z"/>
+                        </svg>
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-python" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                            <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                            <path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                            <line x1="11" y1="6" x2="11" y2="6.01" />
+                            <line x1="13" y1="18" x2="13" y2="18.01" />
+                            </svg>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M7.5 8h3v8l-2 -1" />
+                            <path d="M16.5 8h-2.5a0.5 .5 0 0 0 -.5 .5v3a0.5 .5 0 0 0 .5 .5h1.423a0.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                        </svg>
+                        <p>JS</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                          </svg>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-git-pull-request" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="18" r="2" />
+                            <circle cx="6" cy="6" r="2" />
+                            <circle cx="18" cy="18" r="2" />
+                            <line x1="6" y1="8" x2="6" y2="16" />
+                            <path d="M11 6h5a2 2 0 0 1 2 2v8" />
+                            <polyline points="14 9 11 6 14 3" />
+                        </svg>
+                        <p>Git</p>
+                    </div>
+                </ul>
+            </div></section>
+        <section id="Academics">
+            <div class="heading"><div class="colored">A</div>cademics</div>
+            <div class="content">
+                <b style="margin: 0.5rem 0; font-size: 1.5rem;">B.E. Computer Science</b>
+                <small style="font-size: 1rem;">Chitkara University</small>
+                <small style="margin: 0.5rem 0;">2020-24</small>
+            </div>
+        </section>
+        <footer>
+            Made with <div id="heart"></dietch-a-sketchv>
+        </footer>
+    </main>
+</body>
+</html>
